@@ -86,4 +86,8 @@ select count(Sname) as count2  from SalesPeople where City='London' or City='Par
 -- Q5.
 select sn.Sname,sn.City, count( os.Onum) as Total_Orders,os.Odate from SalesPeople sn join Orders os on sn.Snum=os.Snum group by sn.Snum;
 
+----other 
+
+select Onum as No_of_order , Odate as Date_of_order From orders where Snum > 1000;
+
 
